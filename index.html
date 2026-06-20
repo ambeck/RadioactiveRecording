@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radioactive Recording</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+
+<header class="site-header">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="logo">
+    <img src="img/small_logo.jpg" alt="Radioactive Recording logo">
+    <span>RADIOACTIVE RECORDING</span>
+  </div>
+
+  <nav class="nav-desktop">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">&times;</button>
+  <nav class="nav-mobile">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</aside>
+
+<main>
+  <section id="home" class="hero">
+    <h1>RADIOACTIVE RECORDING</h1>
+    <p>Producing the soundtrack of the atomic city.</p>
+  </section>
+
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Recording (No Mix/Master)</h3>
+        <ul>
+          <li>Hourly Rate: $35.00</li>
+          <li>3 Hour Block: $100.00</li>
+          <li>Full Day (8 Hrs): $250.00</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Mixing</h3>
+        <ul>
+          <li>Single Song — Basic (Clean up, leveling, EQ, compression): $50.00</li>
+          <li>Single Song — Advanced (Mixing, automation, FX, processing): $90.00</li>
+          <li>Bulk Mix (3 Songs): $243.00</li>
+          <li class="no-bullet"><i>Includes 2 free revisions; extra revisions $15 each</i></li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Mastering</h3>
+        <ul>
+          <li>Single Song: $35.00</li>
+          <li>Stem Master (Up to 5 stems): $50.00</li>
+          <li>EP Master (5 Songs): $200.00</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Recording / Mix / Master Bundles</h3>
+        <ul>
+          <li>Single Song (1 hr recording, mix + master): $100.00</li>
+          <li>3 Songs (1 hr each recording, full mix + master): $300.00</li>
+          <li>5 Songs (1 hr each recording, full mix + master): $500.00</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      Radioactive Recording is owned and operated by local legend Mike Hardwick in the heart of Oak Ridge, TN. We offer professional recording services including tracking, mixing, and mastering.
+    </p>
+  </section>
+
+   <section id="gallery" class="gallery-section">
+    <h2>Photo Gallery</h2>
+   
+    <div class="gallery-grid">
+      <button class="gallery-item"><img src="img/IMG_2848.jpeg" alt="Gallery image 1"></button>
+      <button class="gallery-item"><img src="img/IMG_2849.jpeg" alt="Gallery image 2"></button>
+      <button class="gallery-item"><img src="img/IMG_2850.jpeg" alt="Gallery image 3"></button>
+      <button class="gallery-item"><img src="img/IMG_2854.jpeg" alt="Gallery image 4"></button>
+      <button class="gallery-item"><img src="img/IMG_2855.jpeg" alt="Gallery image 5"></button>
+      <button class="gallery-item"><img src="img/IMG_2856.jpeg" alt="Gallery image 6"></button>
+      <button class="gallery-item"><img src="img/IMG_2857.jpeg" alt="Gallery image 7"></button>
+      <button class="gallery-item"><img src="img/IMG_2859.jpeg" alt="Gallery image 8"></button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" src="" alt="Expanded photo">
+  </div>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><strong>Email:</strong> RadioactiveRecordingORTN@gmail.com</p>
+        <p><strong>Phone:</strong> (865) 591-1351</p>
+        <p><i>Inquire for address in Oak Ridge, TN</i></p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Radioactive Recording. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="https://facebook.com/profile.php?id=61590647430625" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+    </a>
+    <a href="https://instagram.com/radioactiverecordingortn" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zM18 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
