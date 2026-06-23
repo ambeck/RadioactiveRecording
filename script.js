@@ -23,12 +23,6 @@ document.querySelectorAll('.nav-mobile a').forEach(link => {
   link.addEventListener('click', closeSidebar);
 });
 
-document.querySelector('.contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thanks for reaching out! This is a demo form — hook it up to a backend or service like Formspree to actually send messages.');
-  e.target.reset();
-});
-
 // Photo gallery lightbox
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.querySelector('.lightbox-img');
